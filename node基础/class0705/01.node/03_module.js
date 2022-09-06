@@ -17,9 +17,9 @@
 let app = require('./02_module')
 let math = require('./math')
 
-app.person.setName('bill')
+app.setName('bill')
 
 var fs = require('fs')
-console.log(app.person);
+console.log(app);
 // console.log(fs);
 console.log(math.add(1, 2))

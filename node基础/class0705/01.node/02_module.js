@@ -19,4 +19,4 @@ var person={
     }
 }
 
-exports.person = person;
+module.exports = person;

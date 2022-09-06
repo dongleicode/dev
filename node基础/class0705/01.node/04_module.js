@@ -24,6 +24,20 @@ b=20
  *      *__filename：当前模块的完整路径
  *      *__dirname：当前模块所在的文件夹路径
  * 
+ *  ! module.exports == exports
+ *  * 但是module.exports 和 exports还是有区别的
+ *  * module.exports = {}可以直接抛出对象
+ *  * exports = {}则不行，exports.obj = {}则OK
+ * 
+ * ! exports和module.exports
+  *     * exports只能通过.的方式来向外暴露内部数据
+  *     * exports.xxx = xxx;
+  *     
+  *     * module.exports既可
+  * 以通过.的方式，也可以直接赋值来暴露内部数据
+  *     * module.exports.xxx = xxx
+  *     * module.exports = {}
+ * 
  */
 
 // console.log(global);
