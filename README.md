@@ -135,11 +135,18 @@
 
     ! npm -v 查看版本号
     ! npm version 查看所有模块
-    ! npm search http  搜索模块
+    ! npm search 包名  搜索包名
+    ! npm install/i 包名  安装生产和开发环境的所有依赖包
+    ! npm init 初始化package.json文件，描述当前包文件
+    ! npm remove/r 模块 删除模块
+    ! npm i 包名 --save  安装包并添加到依赖中-生产环境的dependencies
+    ! npm i 下载当前项目所依赖的所有的包
+    ! npm i 包名 --global/-g 全局安装包（全局安装的包一般都是一些工具）
+    ! npm i 包名 --save-dev/-D  安装开发环境的依赖包devDependencies
 
-
-
-
+    ! 其它操作
+        * 验证路径是否存在
+        * fs.exists(path, callback)
 
 
  -->
