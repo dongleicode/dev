@@ -31,9 +31,12 @@
         * fs.readFile()
 
     ! 3 path路径模块
-        * path.join()
+        * path.join() 拼接路径
         * 今后凡是涉及到路径拼接的操作，都要使用path.join()方法进行处理。不要直接使用 + 进行字符串的拼接
         * path.join(__dirname, './file/1.txt')
+
+        * path.basename() 获取路径中的文件名
+        * path.extname() 获取路径中的文件扩展名
 
 
 
