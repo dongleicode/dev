@@ -1,0 +1,3 @@
+<% users.forEach((user)=> { %>
+  <h2><%= user.name %></h2>
+<% }) %>
