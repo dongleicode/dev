@@ -1,3 +1,5 @@
+<ol>
 <% users.forEach((user)=> { %>
-  <h2><%= user.name %></h2>
+  <li><%= user.name %></li>
 <% }) %>
+</ol>

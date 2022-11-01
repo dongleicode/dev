@@ -5,7 +5,7 @@ const app = new Koa();
 render(app, {
   root: path.join(__dirname, 'view'),
   extname: '.art',
-  debug: process.env.NODE_ENV !== 'production'
+  debug: process.env.NODE_ENV !== 'production'//及时更新；生产环境：缓存，服务器重启
 });
 
 const users = [{name: 'Green'}, {name: '俞敏洪'}, {name: '欧阳震华'}]
