@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>首页</title>
+    <link rel="stylesheet" href="../public/css/common.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>这是首页</h1>
+    <p>id: <%=res.id%></p>
+    <p>name: <%=res.name%></p>
+    <ul>
+        <%for(var i =0 ; i < list.length; i++){%>
+        <li><%=list[i]%></li>
+        <%}%>
+    </ul>
+    <script src="../public/js/main.js"></script>
+</body>
+</html>
