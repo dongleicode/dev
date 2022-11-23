@@ -75,7 +75,9 @@ const s = await collection.find({
 //查询集合的记录总数
 let count = await collection.countDocuments()
 
-console.log(s, count)
+console.log('----------')
+
+console.log(s)
 
   return 'done.';
 }
