@@ -4,28 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>首页</title>
+    <title>上传文件</title>
     <link rel="stylesheet" href="../public/css/common.css" />
     <style></style>
   </head>
   <body>
     <form
       method="POST"
-      action="/upload/bigFile?_csrf={{ ctx.csrf | safe }}"
+      action="/up/upload?_csrf=safe"
       enctype="multipart/form-data"
     >
-      title: <input name="title" /> file: <input name="file" type="file" />
+      title: <input name="title" /> 
+      <br>file:
+      <input name="file" type="file" />
+      <br>
       <button type="submit">Upload</button>
     </form>
 
-    <h1>这是首页</h1>
-    <p>id: <%=res.id%></p>
-    <p>name: <%=res.name%></p>
-    <ul>
-      <%for(var i =0 ; i < list.length; i++){%>
-      <li><%=list[i]%></li>
-      <%}%>
-    </ul>
-    <script src="../public/js/main.js"></script>
   </body>
 </html>

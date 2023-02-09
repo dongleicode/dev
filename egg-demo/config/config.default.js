@@ -18,12 +18,13 @@ module.exports = appInfo => {
   // add your middleware config here
   config.middleware = [];
 
+
   // add your user config here
   const userConfig = {
     // myAppName: 'egg',
   };
 
-  //关闭xss攻击
+  // 关闭xss攻击
   config.security = {
     csrf: {
       enable: false,
@@ -34,6 +35,10 @@ module.exports = appInfo => {
     mapping: {
       '.html': 'ejs',
     },
+  };
+
+  config.multipart = {
+    mode: 'file',
   };
 
   config.mysql = {
@@ -61,3 +66,4 @@ module.exports = appInfo => {
     ...userConfig,
   };
 };
+

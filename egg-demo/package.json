@@ -10,7 +10,9 @@
     "egg": "^3",
     "egg-mysql": "^3.1.1",
     "egg-scripts": "^2",
-    "egg-view-ejs": "^3.0.0"
+    "egg-view-ejs": "^3.0.0",
+    "mz": "^2.7.0",
+    "mz-modules": "^2.1.0"
   },
   "devDependencies": {
     "egg-bin": "^5",

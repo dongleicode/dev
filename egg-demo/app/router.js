@@ -17,5 +17,9 @@ module.exports = app => {
   router.get('/students/detail/:id', controller.students.detail);
   router.put('/students/update', controller.students.update);
   router.delete('/students/delete/:id', controller.students.delete);
-
+  router.get('/up', controller.upload.index);
+  router.post('/up/bigFile', controller.upload.bigFile);
+  router.get('/up/list', controller.upload.list);
+  router.get('/up/upload', controller.upload.upload);
+  router.get('/my', controller.jinrui.index);
 };

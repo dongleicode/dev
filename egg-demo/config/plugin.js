@@ -2,10 +2,10 @@
 
 exports.ejs = {
   enable: true,
-  package: 'egg-view-ejs'
+  package: 'egg-view-ejs',
 };
 
-exports.mysql  = {
+exports.mysql = {
   enable: true,
   package: 'egg-mysql',
 };
